@@ -1,0 +1,23 @@
+{
+  "name": "INN generator",
+  "description": "Random Ukraine INN generator ",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "images/inn_gen_logo.png",
+    "48": "images/inn_gen_logo.png",
+    "128": "images/inn_gen_logo.png"
+  },
+  "action": {
+    "default_icon": "images/inn_gen_logo.png",
+    "default_popup": "index.html",
+    "default_title": "INN generator"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  }
+}
